@@ -2,7 +2,7 @@ Quagga.init(
   {
     config: {
       numOfWorkers: 4,
-      locate: true,
+      locate: false,
       frequency: 10,
       debug: false,
     },

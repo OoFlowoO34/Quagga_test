@@ -8,6 +8,23 @@ Quagga.init(
     decoder: {
       readers: ["ean_reader"],
     },
+
+    halfSample: true,
+    patchSize: "x-small", // x-small, small, medium, large, x-large
+    debug: {
+      showCanvas: true,
+      showPatches: false,
+      showFoundPatches: false,
+      showSkeleton: false,
+      showLabels: false,
+      showPatchLabels: false,
+      showRemainingPatchLabels: false,
+      boxFromPatches: {
+        showTransformed: false,
+        showTransformedBox: false,
+        showBB: false,
+      },
+    },
   },
   function (err) {
     if (err) {

@@ -18,7 +18,10 @@ Quagga.init(
     Quagga.start();
   }
 );
+const getresult = document.getElementById("result");
 
+console.log(getresult);
 Quagga.onDetected(function (data) {
   console.log(data);
+  getresult.innerHTML = data.codeResult.code;
 });

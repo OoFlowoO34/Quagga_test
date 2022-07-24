@@ -1,5 +1,11 @@
 Quagga.init(
   {
+    config: {
+      numOfWorkers: 4,
+      locate: true,
+      frequency: 10,
+      debug: false,
+    },
     inputStream: {
       name: "Live",
       type: "LiveStream",
@@ -10,9 +16,9 @@ Quagga.init(
     },
 
     halfSample: true,
-    patchSize: "x-small", // x-small, small, medium, large, x-large
+    patchSize: "medium", // x-small, small, medium, large, x-large
     debug: {
-      showCanvas: true,
+      showCanvas: false,
       showPatches: false,
       showFoundPatches: false,
       showSkeleton: false,

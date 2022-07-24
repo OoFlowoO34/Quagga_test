@@ -11,3 +11,12 @@ body{
     font-size: 48px;
     color: red;
 }
+
+
+.scanner {
+    border: 1px solid red;
+}
+
+.scannerViewport {
+    border: 1px solid green;
+}
